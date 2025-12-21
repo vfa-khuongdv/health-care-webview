@@ -19,6 +19,7 @@ const NotificationsPage = lazy(
 const SecurityPage = lazy(() => import("./pages/profile/SecurityPage"));
 const PaymentPage = lazy(() => import("./pages/profile/PaymentPage"));
 const HelpSupportPage = lazy(() => import("./pages/profile/HelpSupportPage"));
+const LicensePage = lazy(() => import("./pages/profile/LicensePage"));
 
 const Home = () => {
   const { t } = useTranslation();
@@ -121,6 +122,7 @@ const AppContent = () => {
             <Route path="/profile/security" element={<SecurityPage />} />
             <Route path="/profile/payment" element={<PaymentPage />} />
             <Route path="/profile/help" element={<HelpSupportPage />} />
+            <Route path="/profile/license" element={<LicensePage />} />
           </Routes>
         </Suspense>
       </main>

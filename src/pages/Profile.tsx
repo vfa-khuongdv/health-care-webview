@@ -41,6 +41,13 @@ const Profile = () => {
       sub: t("profile.help_sub"),
       path: "/profile/help",
     },
+    {
+      id: "license",
+      icon: "📜",
+      label: t("profile.license"),
+      sub: t("profile.license_sub"),
+      path: "/profile/license",
+    },
   ];
 
   return (
