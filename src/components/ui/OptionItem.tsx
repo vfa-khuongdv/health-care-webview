@@ -1,4 +1,5 @@
 import React, { type ReactNode } from 'react';
+import { ChevronRight } from 'lucide-react';
 
 interface OptionItemProps {
   label: string;
@@ -42,9 +43,7 @@ const OptionItem: React.FC<OptionItemProps> = ({
         </div>
       </div>
       {rightElement || (onClick && (
-        <svg className="w-5 h-5 text-gray-300 group-hover:text-healthcare-primary transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
+        <ChevronRight className="w-5 h-5 text-gray-300 group-hover:text-healthcare-primary transition-colors" />
       ))}
     </Component>
   );

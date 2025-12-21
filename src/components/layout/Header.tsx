@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { MapPin, Search } from 'lucide-react';
 import Input from '../ui/Input';
 import LanguageSwitcher from '../ui/LanguageSwitcher';
 import ThemeToggle from '../ui/ThemeToggle';
@@ -25,20 +26,13 @@ const Header = () => {
       </div>
       
       <div className="flex items-center space-x-2 text-healthcare-muted mb-4 opacity-80">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
+        <MapPin className="h-4 w-4" />
         <span className="text-xs font-semibold uppercase tracking-wider">{t('common.location')}</span>
       </div>
 
       <Input 
         placeholder={t('common.search_placeholder')}
-        leftIcon={(
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-        )}
+        leftIcon={<Search className="h-5 w-5" />}
         wrapperClassName="bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700 shadow-premium focus-within:ring-2 focus-within:ring-healthcare-primary/20 transition-all"
         className="h-12 pl-0 dark:text-white dark:placeholder:text-slate-500"
       />
