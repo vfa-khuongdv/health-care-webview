@@ -4,7 +4,7 @@ A modern, responsive health care management application built with React, TypeSc
 
 ## 🚀 Live Demo
 
-Check out the live application here: **[health-care.khuongdv.link](https://health-care.khuongdv.link)**
+Check out the live application here: **[https://vfa-khuongdv.github.io/health-care-webview/](https://vfa-khuongdv.github.io/health-care-webview/)**
 
 ## 🎨 Design Preview
 
