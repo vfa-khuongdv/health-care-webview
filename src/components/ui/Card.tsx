@@ -13,9 +13,9 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div
-      className={`bg-white dark:bg-slate-900 rounded-3xl shadow-premium border border-gray-50 dark:border-slate-800 ${
+      className={`glass-card rounded-3xl ${
         padding ? "p-6" : ""
-      } ${className} transition-colors`}
+      } ${className} transition-all duration-300`}
     >
       {children}
     </div>

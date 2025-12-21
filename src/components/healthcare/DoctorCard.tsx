@@ -12,7 +12,7 @@ const DoctorCard = ({ name, specialty, rating, reviews }: DoctorProps) => {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-white dark:bg-slate-900 p-4 rounded-3xl shadow-premium border border-gray-50 dark:border-slate-800 flex space-x-4 active:scale-[0.98] transition-all cursor-pointer">
+    <div className="glass-card p-4 rounded-3xl flex space-x-4 active:scale-[0.98] transition-all cursor-pointer mt-2">
       <div className="w-20 h-24 rounded-2xl bg-healthcare-primary/10 dark:bg-healthcare-primary/20 overflow-hidden shrink-0">
         <div className="w-full h-full flex items-center justify-center text-3xl opacity-50 grayscale group-hover:grayscale-0 transition-all">
           👨‍⚕️

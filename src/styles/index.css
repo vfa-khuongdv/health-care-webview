@@ -3,8 +3,21 @@
 
 @layer base {
   body {
-    @apply bg-healthcare-surface text-healthcare-dark font-sans antialiased;
+    @apply text-healthcare-dark font-sans antialiased min-h-screen relative overflow-x-hidden;
+    background: radial-gradient(at 0% 0%, hsla(199, 89%, 48%, 0.15) 0px, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(171, 66%, 48%, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(348, 89%, 60%, 0.15) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, hsla(199, 89%, 48%, 0.1) 0px, transparent 50%),
+                #f8fafc;
     -webkit-tap-highlight-color: transparent;
+  }
+
+  .dark body {
+    background: radial-gradient(at 0% 0%, hsla(199, 89%, 48%, 0.2) 0px, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(171, 66%, 48%, 0.2) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(348, 89%, 60%, 0.2) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, hsla(199, 89%, 48%, 0.15) 0px, transparent 50%),
+                #0f172a;
   }
 
   /* Custom scrollbar for horizontal categories */
@@ -19,6 +32,14 @@
 
 @layer utilities {
   .glass-effect {
-    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-glass;
+    @apply bg-white/40 dark:bg-slate-900/40 backdrop-blur-xl border border-white/30 dark:border-slate-700/30 shadow-glass;
+  }
+
+  .glass-card {
+    @apply bg-white/60 dark:bg-slate-900/60 backdrop-blur-2xl border border-white/40 dark:border-slate-700/40 shadow-premium;
+  }
+
+  .glass-floating {
+    @apply bg-white/70 dark:bg-slate-900/70 backdrop-blur-2xl border border-white/50 dark:border-slate-600/30 shadow-[0_20px_50px_rgba(0,0,0,0.1)];
   }
 }

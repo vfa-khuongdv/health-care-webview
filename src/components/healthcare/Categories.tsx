@@ -30,7 +30,7 @@ const Categories = () => {
             className="flex flex-col items-center space-y-2 shrink-0"
           >
             <div
-              className={`w-16 h-16 ${cat.color} dark:bg-slate-800 rounded-2xl flex items-center justify-center text-2xl shadow-sm border border-white/50 dark:border-slate-700 active:scale-95 transition-transform cursor-pointer`}
+              className={`w-16 h-16 glass-card rounded-2xl flex items-center justify-center text-2xl active:scale-95 transition-transform cursor-pointer`}
             >
               {cat.icon}
             </div>

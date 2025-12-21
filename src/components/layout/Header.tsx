@@ -8,7 +8,7 @@ const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <header className="px-6 pt-8 pb-4 bg-healthcare-surface dark:bg-healthcare-dark sticky top-0 z-100 transition-colors">
+    <header className="px-6 pt-8 pb-4 glass-effect sticky top-0 z-100 transition-all duration-300">
       <div className="flex justify-between items-center mb-6">
         <div>
           <p className="text-healthcare-muted dark:text-slate-400 text-sm font-medium">
