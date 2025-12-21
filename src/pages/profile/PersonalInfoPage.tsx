@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Input from '../../components/ui/Input';
+import Select from '../../components/ui/Select';
 import PageHeader from '../../components/ui/PageHeader';
 import Card from '../../components/ui/Card';
 
@@ -35,16 +36,11 @@ const PersonalInfoPage: React.FC = () => {
             />
 
             <div className="grid grid-cols-2 gap-4">
-              <div>
-                <label className="text-[10px] font-bold text-healthcare-muted dark:text-slate-400 uppercase tracking-widest px-1">{t('profile.gender')}</label>
-                <div className="mt-1 p-4 bg-healthcare-surface dark:bg-slate-800 rounded-2xl border border-transparent focus-within:border-healthcare-primary/30 transition-all">
-                  <select className="w-full bg-transparent outline-none text-sm font-medium text-healthcare-dark dark:text-white appearance-none">
-                    <option>{t('profile.male')}</option>
-                    <option>{t('profile.female')}</option>
-                    <option>{t('profile.other')}</option>
-                  </select>
-                </div>
-              </div>
+              <Select label={t('profile.gender')}>
+                <option>{t('profile.male')}</option>
+                <option>{t('profile.female')}</option>
+                <option>{t('profile.other')}</option>
+              </Select>
               <Input 
                 label={t('profile.dob')}
                 type="date"
