@@ -40,14 +40,6 @@ const Records = () => {
           <FileText className="w-5 h-5 text-healthcare-primary" />
         </div>
       </div>
-
-      <Input 
-        placeholder={t('records.search_placeholder')}
-        leftIcon={<Search className="w-5 h-5" />}
-        containerClassName="mb-6"
-        className="pl-0 bg-white dark:bg-slate-800 dark:text-white dark:placeholder:text-slate-500"
-      />
-
       <div className="space-y-4">
         {records.map((record) => (
           <div key={record.id} className="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-premium border border-gray-100 dark:border-slate-800 flex items-center justify-between hover:border-healthcare-primary/30 transition-colors cursor-pointer group">
