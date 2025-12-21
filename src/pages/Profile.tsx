@@ -12,7 +12,7 @@ const Profile = () => {
     { id: 'payment', icon: '💳', label: t('profile.payment'), sub: t('profile.payment_sub'), path: '/profile/payment' },
     { id: 'help', icon: '❓', label: t('profile.help'), sub: t('profile.help_sub'), path: '/profile/help' },
   ];
-
+   
   return (
     <div className="pb-10">
       <div className="animate-fade-in">
