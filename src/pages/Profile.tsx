@@ -28,13 +28,6 @@ const Profile = () => {
       path: "/profile/security",
     },
     {
-      id: "payment",
-      icon: "💳",
-      label: t("profile.payment"),
-      sub: t("profile.payment_sub"),
-      path: "/profile/payment",
-    },
-    {
       id: "help",
       icon: "❓",
       label: t("profile.help"),
