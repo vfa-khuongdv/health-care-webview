@@ -51,21 +51,21 @@ const PaymentPage: React.FC = () => {
  
         {/* Action Buttons */}
         <div className="grid grid-cols-2 gap-4 mt-6">
-          <button className="flex flex-col items-center justify-center p-4 bg-white rounded-2xl border border-gray-50 shadow-sm space-y-2 group">
+          <button className="flex flex-col items-center justify-center p-4 bg-white dark:bg-slate-900 rounded-2xl border border-gray-50 dark:border-slate-800 shadow-sm space-y-2 group">
             <div className="w-10 h-10 bg-healthcare-primary/10 rounded-xl flex items-center justify-center text-healthcare-primary transition-transform group-active:scale-90">
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
               </svg>
             </div>
-            <span className="text-xs font-bold text-healthcare-dark">{t('payment.add_card')}</span>
+            <span className="text-xs font-bold text-healthcare-dark dark:text-white">{t('payment.add_card')}</span>
           </button>
-          <button className="flex flex-col items-center justify-center p-4 bg-white rounded-2xl border border-gray-50 shadow-sm space-y-2 group">
+          <button className="flex flex-col items-center justify-center p-4 bg-white dark:bg-slate-900 rounded-2xl border border-gray-50 dark:border-slate-800 shadow-sm space-y-2 group">
             <div className="w-10 h-10 bg-healthcare-secondary/10 rounded-xl flex items-center justify-center text-healthcare-secondary transition-transform group-active:scale-90">
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a2 2 0 002-2V5a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
             </div>
-            <span className="text-xs font-bold text-healthcare-dark">{t('payment.methods')}</span>
+            <span className="text-xs font-bold text-healthcare-dark dark:text-white">{t('payment.methods')}</span>
           </button>
         </div>
  
@@ -88,7 +88,7 @@ const PaymentPage: React.FC = () => {
                     {tx.category === 'Health' ? '🏥' : tx.category === 'Medicine' ? '💊' : '💳'}
                   </div>
                 )}
-                rightElement={<p className="text-sm font-bold text-healthcare-dark">{tx.amount}</p>}
+                rightElement={<p className="text-sm font-bold text-healthcare-dark dark:text-white">{tx.amount}</p>}
               />
             ))}
           </div>

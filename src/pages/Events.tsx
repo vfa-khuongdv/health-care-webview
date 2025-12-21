@@ -36,8 +36,8 @@ const Events = () => {
   return (
     <div className="px-6 py-4 animate-fade-in pb-10">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold text-healthcare-dark">{t('events.title')}</h2>
-        <div className="bg-healthcare-primary/10 p-2 rounded-full">
+        <h2 className="text-2xl font-bold text-healthcare-dark dark:text-white">{t('events.title')}</h2>
+        <div className="bg-healthcare-primary/10 dark:bg-healthcare-primary/20 p-2 rounded-full">
           <svg className="w-5 h-5 text-healthcare-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
           </svg>
@@ -46,11 +46,11 @@ const Events = () => {
 
       <div className="space-y-4">
         {events.map((event) => (
-          <div key={event.id} className="bg-white p-4 rounded-2xl shadow-premium border border-gray-100 hover:scale-[1.02] transition-transform cursor-pointer">
+          <div key={event.id} className="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-premium border border-gray-100 dark:border-slate-800 hover:scale-[1.02] transition-transform cursor-pointer">
             <div className="flex justify-between items-start mb-3">
               <div className="flex items-center space-x-3">
                 <div className={`w-2 h-2 rounded-full ${event.color}`}></div>
-                <span className={`text-[10px] font-bold uppercase tracking-wider ${event.status === t('events.status_upcoming') ? 'text-healthcare-primary' : 'text-gray-400'}`}>
+                <span className={`text-[10px] font-bold uppercase tracking-wider ${event.status === t('events.status_upcoming') ? 'text-healthcare-primary' : 'text-gray-400 dark:text-slate-500'}`}>
                   {event.status}
                 </span>
               </div>
@@ -61,21 +61,21 @@ const Events = () => {
               </button>
             </div>
             
-            <h3 className="text-base font-bold text-healthcare-dark mb-1">{event.doctor}</h3>
-            <p className="text-xs text-healthcare-muted mb-4">{event.specialty}</p>
+            <h3 className="text-base font-bold text-healthcare-dark dark:text-white mb-1">{event.doctor}</h3>
+            <p className="text-xs text-healthcare-muted dark:text-slate-400 mb-4">{event.specialty}</p>
             
-            <div className="flex items-center justify-between pt-4 border-t border-gray-50">
+            <div className="flex items-center justify-between pt-4 border-t border-gray-50 dark:border-slate-800">
               <div className="flex items-center space-x-2">
-                <svg className="w-4 h-4 text-healthcare-primary/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-4 h-4 text-healthcare-primary/60 dark:text-healthcare-primary/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                <span className="text-xs font-semibold text-healthcare-dark">{event.date}</span>
+                <span className="text-xs font-semibold text-healthcare-dark dark:text-slate-300">{event.date}</span>
               </div>
               <div className="flex items-center space-x-2">
-                <svg className="w-4 h-4 text-healthcare-primary/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-4 h-4 text-healthcare-primary/60 dark:text-healthcare-primary/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span className="text-xs font-semibold text-healthcare-dark">{event.time}</span>
+                <span className="text-xs font-semibold text-healthcare-dark dark:text-slate-300">{event.time}</span>
               </div>
             </div>
           </div>

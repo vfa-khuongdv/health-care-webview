@@ -6,6 +6,7 @@ import BottomNav from './components/layout/BottomNav';
 import Categories from './components/healthcare/Categories';
 import DoctorCard from './components/healthcare/DoctorCard';
 import Loading from './components/ui/Loading';
+import { ThemeProvider } from './context/ThemeContext';
 
 // Lazy load pages
 const Events = lazy(() => import('./pages/Events'));
@@ -30,18 +31,18 @@ const Home = () => {
     <div className="animate-fade-in">
       {/* Hero Section */}
       <section className="px-6 mt-2">
-        <div className="bg-linear-to-br from-healthcare-primary to-healthcare-secondary p-6 rounded-3xl text-white relative overflow-hidden shadow-lg">
+        <div className="bg-linear-to-br from-healthcare-primary to-healthcare-secondary dark:from-healthcare-primary/90 dark:to-healthcare-secondary/90 p-6 rounded-3xl text-white relative overflow-hidden shadow-lg">
           <div className="relative z-10 w-2/3">
             <h2 className="text-xl font-bold mb-2 leading-tight">{t('home.hero_title')}</h2>
-            <p className="text-white/80 text-xs mb-4">{t('home.hero_description')}</p>
-            <button className="bg-white text-healthcare-primary px-4 py-2 rounded-xl text-xs font-bold active:scale-95 transition-transform shadow-premium">
+            <p className="text-white/80 dark:text-white/70 text-xs mb-4">{t('home.hero_description')}</p>
+            <button className="bg-white dark:bg-slate-800 text-healthcare-primary dark:text-healthcare-secondary px-4 py-2 rounded-xl text-xs font-bold active:scale-95 transition-transform shadow-premium">
               {t('common.book_now')}
             </button>
           </div>
           {/* Abstract background shapes */}
-          <div className="absolute top-[-20%] right-[-10%] w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
-          <div className="absolute bottom-[-10%] right-[-5%] w-24 h-24 bg-healthcare-secondary/20 rounded-full"></div>
-          <div className="absolute right-4 bottom-4 text-6xl opacity-20">🏥</div>
+          <div className="absolute top-[-20%] right-[-10%] w-40 h-40 bg-white/10 dark:bg-white/5 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-[-10%] right-[-5%] w-24 h-24 bg-healthcare-secondary/20 dark:bg-healthcare-secondary/30 rounded-full"></div>
+          <div className="absolute right-4 bottom-4 text-6xl opacity-20 dark:opacity-30">🏥</div>
         </div>
       </section>
 
@@ -50,7 +51,7 @@ const Home = () => {
       {/* Doctors Section */}
       <section className="mt-8 px-6 pb-4">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-lg font-bold text-healthcare-dark">{t('home.nearby_doctors')}</h2>
+          <h2 className="text-lg font-bold text-healthcare-dark dark:text-white">{t('home.nearby_doctors')}</h2>
           <button className="text-healthcare-primary text-xs font-bold uppercase tracking-wider">{t('common.see_all')}</button>
         </div>
         
@@ -69,7 +70,7 @@ const AppContent = () => {
   const showHeader = !location.pathname.startsWith('/profile');
 
   return (
-    <div className="min-h-screen bg-healthcare-surface pb-24 md:max-w-md md:mx-auto md:shadow-2xl md:relative md:overflow-hidden">
+    <div className="min-h-screen bg-healthcare-surface dark:bg-healthcare-dark pb-24 md:max-w-md md:mx-auto md:shadow-2xl md:relative md:overflow-hidden transition-colors">
       {showHeader && <Header />}
       
       <main>
@@ -95,9 +96,11 @@ const AppContent = () => {
 
 function App() {
   return (
-    <BrowserRouter>
-      <AppContent />
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <AppContent />
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 

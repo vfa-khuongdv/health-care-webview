@@ -36,9 +36,9 @@ const PersonalInfoPage: React.FC = () => {
 
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className="text-[10px] font-bold text-healthcare-muted uppercase tracking-widest px-1">{t('profile.gender')}</label>
-                <div className="mt-1 p-4 bg-healthcare-surface rounded-2xl border border-transparent focus-within:border-healthcare-primary/30 transition-all">
-                  <select className="w-full bg-transparent outline-none text-sm font-medium text-healthcare-dark appearance-none">
+                <label className="text-[10px] font-bold text-healthcare-muted dark:text-slate-400 uppercase tracking-widest px-1">{t('profile.gender')}</label>
+                <div className="mt-1 p-4 bg-healthcare-surface dark:bg-slate-800 rounded-2xl border border-transparent focus-within:border-healthcare-primary/30 transition-all">
+                  <select className="w-full bg-transparent outline-none text-sm font-medium text-healthcare-dark dark:text-white appearance-none">
                     <option>{t('profile.male')}</option>
                     <option>{t('profile.female')}</option>
                     <option>{t('profile.other')}</option>

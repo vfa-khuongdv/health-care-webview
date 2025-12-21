@@ -40,9 +40,9 @@ const HelpSupportPage: React.FC = () => {
               { icon: '💬', label: t('help.chat') },
               { icon: '✉️', label: t('help.email') }
             ].map(item => (
-              <button key={item.label} className="bg-white p-4 rounded-2xl border border-gray-50 shadow-sm flex flex-col items-center space-y-2 group active:scale-95 transition-all">
+              <button key={item.label} className="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-gray-50 dark:border-slate-800 shadow-sm flex flex-col items-center space-y-2 group active:scale-95 transition-all">
                 <span className="text-2xl group-hover:scale-110 transition-transform">{item.icon}</span>
-                <span className="text-[10px] font-bold text-healthcare-dark">{item.label}</span>
+                <span className="text-[10px] font-bold text-healthcare-dark dark:text-white">{item.label}</span>
               </button>
             ))}
           </div>
@@ -53,14 +53,14 @@ const HelpSupportPage: React.FC = () => {
           <SectionHeader>{t('help.popular_faqs')}</SectionHeader>
           <div className="space-y-3">
             {faqs.map((faq, i) => (
-              <div key={i} className="bg-white p-4 rounded-2xl border border-gray-50 shadow-sm space-y-2">
-                <h4 className="text-sm font-bold text-healthcare-dark flex justify-between items-center">
+              <div key={i} className="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-gray-50 dark:border-slate-800 shadow-sm space-y-2">
+                <h4 className="text-sm font-bold text-healthcare-dark dark:text-white flex justify-between items-center">
                   {faq.q}
-                  <svg className="w-4 h-4 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-4 h-4 text-gray-300 dark:text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </h4>
-                <p className="text-[11px] text-healthcare-muted leading-relaxed">
+                <p className="text-[11px] text-healthcare-muted dark:text-slate-400 leading-relaxed">
                   {faq.a}
                 </p>
               </div>
