@@ -12,19 +12,19 @@ Explore the application's clean and intuitive interface:
 
 ### 🏠 Home Page
 
-![Home Screen](public/home.png)
+<img src="public/home.png" width="200" alt="Home Screen">
 
 ### 📅 Events
 
-![Events Screen](public/events.png)
+<img src="public/events.png" width="200" alt="Events Screen">
 
 ### 📂 Health Records
 
-![Records Screen](public/records.png)
+<img src="public/records.png" width="200" alt="Records Screen">
 
 ### 👤 Profile
 
-![Profile Screen](public/profile.png)
+<img src="public/profile.png" width="200" alt="Profile Screen">
 
 ## ✨ Key Features
 
