@@ -22,6 +22,7 @@ Explore the application's clean and intuitive interface:
 - **Internationalization (i18n)**: Supports multiple languages (English & Vietnamese).
 - **Responsive Layout**: Optimized for various screen sizes, especially mobile devices.
 - **Health Management**: Track appointments, medical records, and personal health metrics.
+- **GitHub Deployment**: Automated CI/CD using GitHub Actions for static hosting.
 
 ## 🛠️ Tech Stack
 
