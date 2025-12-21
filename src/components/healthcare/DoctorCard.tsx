@@ -1,5 +1,5 @@
-import { useTranslation } from 'react-i18next';
-import { Star, Plus } from 'lucide-react';
+import { useTranslation } from "react-i18next";
+import { Star, Plus } from "lucide-react";
 
 interface DoctorProps {
   name: string;
@@ -20,15 +20,23 @@ const DoctorCard = ({ name, specialty, rating, reviews }: DoctorProps) => {
       </div>
       <div className="flex flex-col justify-between py-1 grow">
         <div>
-          <h3 className="font-bold text-healthcare-dark dark:text-white truncate">{name}</h3>
-          <p className="text-xs font-semibold text-healthcare-muted dark:text-slate-400 uppercase tracking-wider">{specialty}</p>
+          <h3 className="font-bold text-healthcare-dark dark:text-white truncate">
+            {name}
+          </h3>
+          <p className="text-xs font-semibold text-healthcare-muted dark:text-slate-400 uppercase tracking-wider">
+            {specialty}
+          </p>
         </div>
-        
+
         <div className="flex items-center justify-between mt-2">
           <div className="flex items-center space-x-1">
             <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
-            <span className="text-xs font-bold text-healthcare-dark dark:text-slate-200">{rating}</span>
-            <span className="text-[10px] text-healthcare-muted dark:text-slate-400">({reviews} {t('doctor.reviews')})</span>
+            <span className="text-xs font-bold text-healthcare-dark dark:text-slate-200">
+              {rating}
+            </span>
+            <span className="text-[10px] text-healthcare-muted dark:text-slate-400">
+              ({reviews} {t("doctor.reviews")})
+            </span>
           </div>
           <button className="p-1.5 rounded-lg bg-healthcare-primary/5 text-healthcare-primary hover:bg-healthcare-primary hover:text-white transition-colors">
             <Plus className="h-4 w-4" />

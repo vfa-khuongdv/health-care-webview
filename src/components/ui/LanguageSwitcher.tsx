@@ -1,10 +1,10 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
 
   const toggleLanguage = () => {
-    const nextLang = i18n.language === 'en' ? 'vi' : 'en';
+    const nextLang = i18n.language === "en" ? "vi" : "en";
     i18n.changeLanguage(nextLang);
   };
 
@@ -15,11 +15,9 @@ const LanguageSwitcher = () => {
       aria-label="Toggle Language"
     >
       <span className="text-xs font-bold uppercase tracking-wider dark:text-white text-healthcare-primary">
-        {i18n.language === 'en' ? 'VI' : 'EN'}
+        {i18n.language === "en" ? "VI" : "EN"}
       </span>
-      <span className="text-sm">
-        {i18n.language === 'en' ? '🇻🇳' : '🇺🇸'}
-      </span>
+      <span className="text-sm">{i18n.language === "en" ? "🇻🇳" : "🇺🇸"}</span>
     </button>
   );
 };
