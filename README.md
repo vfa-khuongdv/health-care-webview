@@ -10,20 +10,9 @@ Check out the live application here: **[health-care.khuongdv.link](https://healt
 
 Explore the application's clean and intuitive interface:
 
-### 🏠 Home Page
-
 <img src="public/home.png" width="200" alt="Home Screen">
-
-### 📅 Events
-
 <img src="public/events.png" width="200" alt="Events Screen">
-
-### 📂 Health Records
-
 <img src="public/records.png" width="200" alt="Records Screen">
-
-### 👤 Profile
-
 <img src="public/profile.png" width="200" alt="Profile Screen">
 
 ## ✨ Key Features
