@@ -51,85 +51,101 @@ const Profile = () => {
   ];
 
   return (
-    <div className="pb-10">
+    <div className="pb-8">
       <div className="animate-fade-in">
-        {/* Profile Header */}
-        <div className="bg-linear-to-b from-healthcare-primary/10 to-transparent dark:from-healthcare-primary/20 px-6 pt-10 pb-6 rounded-b-[40px]">
-          <div className="flex flex-col items-center">
-            <div className="relative">
-              <div className="w-24 h-24 rounded-3xl bg-white dark:bg-slate-800 p-1 shadow-premium">
-                <div className="w-full h-full rounded-2xl bg-healthcare-primary/10 dark:bg-healthcare-primary/20 flex items-center justify-center text-4xl">
+        {/* Profile Header - More Compact */}
+        <div className="bg-linear-to-b from-healthcare-primary/10 to-transparent dark:from-healthcare-primary/20 px-5 pt-6 pb-4 rounded-b-3xl">
+          <div className="flex items-center space-x-4">
+            {/* Profile Image - Smaller and Left-aligned */}
+            <div className="relative shrink-0">
+              <div className="w-20 h-20 rounded-2xl bg-white dark:bg-slate-800 p-1 shadow-lg">
+                <div className="w-full h-full rounded-xl bg-healthcare-primary/10 dark:bg-healthcare-primary/20 flex items-center justify-center text-3xl">
                   🧔🏻‍♂️
                 </div>
               </div>
-              <button className="absolute -bottom-2 -right-2 bg-healthcare-primary text-white p-2 rounded-xl shadow-lg border-2 border-white dark:border-slate-800">
-                <Camera className="w-4 h-4" />
+              <button className="absolute -bottom-1 -right-1 bg-healthcare-primary text-white p-1.5 rounded-lg shadow-lg border-2 border-white dark:border-slate-800">
+                <Camera className="w-3 h-3" />
               </button>
             </div>
-            <h2 className="mt-4 text-xl font-bold text-healthcare-dark dark:text-white">
-              Johnathan Doe
-            </h2>
-            <p className="text-xs text-healthcare-muted dark:text-slate-400">
-              {t("profile.blood_type")}: O+ | {t("profile.age")}: 28
-            </p>
 
-            <div className="flex space-x-8 mt-6">
-              <div className="text-center">
-                <p className="text-healthcare-primary font-bold text-lg">178</p>
-                <p className="text-[10px] text-healthcare-muted dark:text-slate-500 font-bold uppercase tracking-widest">
-                  {t("profile.height")}
-                </p>
-              </div>
-              <div className="text-center">
-                <p className="text-healthcare-primary font-bold text-lg">
-                  72kg
-                </p>
-                <p className="text-[10px] text-healthcare-muted dark:text-slate-500 font-bold uppercase tracking-widest">
-                  {t("profile.weight")}
-                </p>
-              </div>
-              <div className="text-center">
-                <p className="text-healthcare-primary font-bold text-lg">
-                  110/80
-                </p>
-                <p className="text-[10px] text-healthcare-muted dark:text-slate-500 font-bold uppercase tracking-widest">
-                  {t("profile.bp")}
-                </p>
+            {/* Profile Info - Side by side for compactness */}
+            <div className="flex-1 min-w-0">
+              <h2 className="text-lg font-bold text-healthcare-dark dark:text-white truncate">
+                Johnathan Doe
+              </h2>
+              <p className="text-[11px] text-healthcare-muted dark:text-slate-400 mt-0.5">
+                {t("profile.blood_type")}: O+ | {t("profile.age")}: 28
+              </p>
+
+              {/* Compact Stats - Horizontal */}
+              <div className="flex space-x-4 mt-2">
+                <div className="flex items-baseline space-x-1">
+                  <span className="text-healthcare-primary font-bold text-sm">
+                    178
+                  </span>
+                  <span className="text-[9px] text-healthcare-muted dark:text-slate-500 uppercase">
+                    cm
+                  </span>
+                </div>
+                <div className="flex items-baseline space-x-1">
+                  <span className="text-healthcare-primary font-bold text-sm">
+                    72
+                  </span>
+                  <span className="text-[9px] text-healthcare-muted dark:text-slate-500 uppercase">
+                    kg
+                  </span>
+                </div>
+                <div className="flex items-baseline space-x-1">
+                  <span className="text-healthcare-primary font-bold text-sm">
+                    110/80
+                  </span>
+                  <span className="text-[9px] text-healthcare-muted dark:text-slate-500 uppercase">
+                    BP
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Menu Options */}
-        <div className="px-6 mt-6 space-y-3">
+        {/* Menu Options - More Compact */}
+        <div className="px-4 mt-4 space-y-2">
           {menuItems.map((item, index) => (
             <Link
               key={index}
               to={item.path}
-              className="w-full bg-white dark:bg-slate-900 p-4 rounded-2xl flex items-center justify-between border border-gray-50 dark:border-slate-800 shadow-sm hover:border-healthcare-primary/20 transition-all group active:scale-[0.98]"
+              className="w-full bg-white dark:bg-slate-900 p-3 rounded-xl flex items-center justify-between border border-gray-50 dark:border-slate-800 shadow-sm hover:border-healthcare-primary/20 transition-all group active:scale-[0.98]"
             >
-              <div className="flex items-center space-x-4">
-                <div className="w-10 h-10 bg-healthcare-surface dark:bg-slate-800 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+              <div className="flex items-center space-x-3">
+                <div className="w-9 h-9 bg-healthcare-surface dark:bg-slate-800 rounded-lg flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
                   {item.icon}
                 </div>
                 <div className="text-left">
-                  <h3 className="text-sm font-bold text-healthcare-dark dark:text-white">
+                  <h3 className="text-sm font-semibold text-healthcare-dark dark:text-white">
                     {item.label}
                   </h3>
-                  <p className="text-[10px] text-healthcare-muted dark:text-slate-500">
+                  <p className="text-[10px] text-healthcare-muted dark:text-slate-500 leading-tight">
                     {item.sub}
                   </p>
                 </div>
               </div>
-              <ChevronRight className="w-5 h-5 text-gray-300 group-hover:text-healthcare-primary transition-colors" />
+              <ChevronRight className="w-4 h-4 text-gray-300 group-hover:text-healthcare-primary transition-colors" />
             </Link>
           ))}
         </div>
 
-        <div className="px-6 mt-8">
-          <button className="w-full py-4 rounded-2xl border-2 border-red-50 dark:border-red-900/20 text-red-500 dark:text-red-400 font-bold text-sm hover:bg-red-50 dark:hover:bg-red-900/10 transition-colors active:scale-[0.98]">
+        {/* Logout Button - More Compact */}
+        <div className="px-4 mt-5">
+          <button className="w-full py-3 rounded-xl border-2 border-red-50 dark:border-red-900/20 text-red-500 dark:text-red-400 font-semibold text-sm hover:bg-red-50 dark:hover:bg-red-900/10 transition-colors active:scale-[0.98]">
             {t("profile.logout")}
           </button>
+        </div>
+
+        {/* Version Display - More Compact */}
+        <div className="px-4 mt-4 pb-2 text-center">
+          <p className="text-[10px] text-healthcare-muted dark:text-slate-500">
+            {t("profile.version")} {import.meta.env.VITE_APP_VERSION || "1.0.0"}
+          </p>
         </div>
       </div>
     </div>

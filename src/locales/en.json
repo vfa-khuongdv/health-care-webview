@@ -62,7 +62,8 @@
     "female": "Female",
     "other": "Other",
     "dob": "Date of Birth",
-    "save_changes": "Save Changes"
+    "save_changes": "Save Changes",
+    "version": "Version"
   },
   "notifications": {
     "title": "Notifications",

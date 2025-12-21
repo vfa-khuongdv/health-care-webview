@@ -61,7 +61,8 @@
     "female": "Nữ",
     "other": "Khác",
     "dob": "Ngày sinh",
-    "save_changes": "Lưu thay đổi"
+    "save_changes": "Lưu thay đổi",
+    "version": "Phiên bản"
   },
   "notifications": {
     "title": "Thông báo",
