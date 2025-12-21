@@ -48,6 +48,6 @@ export default defineConfig({
     "import.meta.env.VITE_APP_VERSION": JSON.stringify(packageJson.version),
   },
   server: {
-    allowedHosts: ["test.khuongdv.link"],
+    allowedHosts: ["health-care.khuongdv.link"],
   },
 });

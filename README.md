@@ -1,73 +1,69 @@
-# React + TypeScript + Vite
+# Health Care App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive health care management application built with React, TypeScript, and Vite. This application features a sleek "Glassmorphism" design inspired by iOS aesthetics, providing a premium user experience for managing health records, events, and personal profiles.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out the live application here: **[health-care.khuongdv.link](https://health-care.khuongdv.link)**
 
-## React Compiler
+## 🎨 Design Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Explore the application's clean and intuitive interface:
 
-## Expanding the ESLint configuration
+### 🏠 Home Page
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Home Screen](public/home.png)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 📅 Events
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+![Events Screen](public/events.png)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 📂 Health Records
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+![Records Screen](public/records.png)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 👤 Profile
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+![Profile Screen](public/profile.png)
+
+## ✨ Key Features
+
+- **Glassmorphism Design**: High-end visual style with sleek gradients and blurred backgrounds.
+- **Progressive Web App (PWA)**: Installable on your device with offline support.
+- **Internationalization (i18n)**: Supports multiple languages (English & Vietnamese).
+- **Responsive Layout**: Optimized for various screen sizes, especially mobile devices.
+- **Health Management**: Track appointments, medical records, and personal health metrics.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [React](https://reactjs.org/) (Vite)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: Vanilla CSS (Custom Design System)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **i18n**: `react-i18next`
+- **PWA**: `vite-plugin-pwa`
+
+## 📦 Getting Started
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
