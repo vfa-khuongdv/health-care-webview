@@ -59,7 +59,7 @@ const Home = () => {
             <h2 className="text-xl font-bold mb-2 leading-tight">
               {t("home.hero_title")}
             </h2>
-            <p className="text-white/80 dark:text-white/70 text-xs mb-4">
+            <p className="dark:text-white/70 text-xs mb-4">
               {t("home.hero_description")}
             </p>
             <button className="bg-healthcare-primary dark:bg-healthcare-secondary/20 text-white dark:text-healthcare-secondary px-4 py-2 rounded-xl text-xs font-bold active:scale-95 transition-transform shadow-premium">
