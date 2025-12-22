@@ -129,7 +129,7 @@ const Profile = () => {
 
         {/* Logout Button - More Compact */}
         <div className="px-4 mt-5">
-          <button className="w-full py-3 rounded-xl border-2 border-red-50 dark:border-red-900/20 text-red-500 dark:text-red-400 font-semibold text-sm hover:bg-red-50 dark:hover:bg-red-900/10 transition-colors active:scale-[0.98]">
+          <button className="w-full py-3 rounded-xl border-2 border-red-300 dark:border-red-900/20 text-red-500 dark:text-red-400 font-semibold text-sm hover:bg-red-50 dark:hover:bg-red-900/10 transition-colors active:scale-[0.98]">
             {t("profile.logout")}
           </button>
         </div>
