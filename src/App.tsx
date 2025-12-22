@@ -67,8 +67,7 @@ const Home = () => {
             </button>
           </div>
           {/* Abstract background shapes */}
-          <div className="absolute top-[-20%] right-[-10%] w-40 h-40 bg-white/10 dark:bg-white/5 rounded-full blur-2xl"></div>
-          <div className="absolute bottom-[-10%] right-[-5%] w-24 h-24 bg-healthcare-secondary/20 dark:bg-healthcare-secondary/30 rounded-full"></div>
+          <div className="absolute bottom-[-10%] right-[-5%] w-30 h-30 bg-healthcare-secondary/20 dark:bg-healthcare-secondary/30 rounded-full"></div>
           <div className="absolute right-4 bottom-4 text-6xl opacity-20 dark:opacity-30">
             🏥
           </div>
