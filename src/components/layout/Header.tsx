@@ -21,11 +21,6 @@ const Header = () => {
         <div className="flex items-center space-x-3">
           <ThemeToggle />
           <LanguageSwitcher />
-          <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white dark:border-slate-800 shadow-premium">
-            <div className="w-full h-full bg-healthcare-primary flex items-center justify-center dark:text-white/70 font-bold text-lg">
-              KD
-            </div>
-          </div>
         </div>
       </div>
 
