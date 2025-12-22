@@ -29,7 +29,7 @@ const Input: React.FC<InputProps> = ({
         </label>
       )}
       <div
-        className={`relative flex items-center bg-white/20 dark:bg-slate-800/30 rounded-2xl border border-white/30 dark:border-slate-700/50 focus-within:border-healthcare-primary/40 focus-within:shadow-sm transition-all ${
+        className={`relative flex items-center bg-white/20 dark:bg-slate-800/30 rounded-2xl border border-healthcare-primary/20 dark:border-slate-700/50 focus-within:border-healthcare-primary/40 dark:focus-within:border-slate-700 focus-within:shadow-sm transition-all ${
           leftIcon ? "pl-4" : ""
         } ${rightIcon ? "pr-4" : ""} ${wrapperClassName}`}
       >

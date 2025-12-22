@@ -18,7 +18,7 @@ const Categories = () => {
         <h2 className="text-lg font-bold text-healthcare-dark dark:text-white/70">
           {t("categories.title")}
         </h2>
-        <button className="text-healthcare-primary text-xs font-bold uppercase tracking-wider">
+        <button className="text-healthcare-primary dark:text-white/70 text-xs font-bold uppercase tracking-wider">
           {t("common.see_all")}
         </button>
       </div>

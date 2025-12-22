@@ -56,7 +56,7 @@ const Profile = () => {
                   🧔🏻‍♂️
                 </div>
               </div>
-              <button className="absolute -bottom-1 -right-1 bg-healthcare-primary text-white p-1.5 rounded-lg shadow-lg border-2 border-white dark:border-slate-800">
+              <button className="absolute -bottom-1 -right-1 bg-healthcare-primary dark:bg-healthcare-primary/20 text-white p-1.5 rounded-lg shadow-lg border-2 border-white dark:border-slate-800">
                 <Camera className="w-3 h-3" />
               </button>
             </div>
@@ -66,33 +66,33 @@ const Profile = () => {
               <h2 className="text-lg font-bold text-healthcare-dark dark:text-white/70 truncate">
                 Johnathan Doe
               </h2>
-              <p className="text-[11px] text-healthcare-muted dark:text-slate-400 mt-0.5">
+              <p className="text-[11px] text-healthcare-muted dark:text-white/70 mt-0.5">
                 {t("profile.blood_type")}: O+ | {t("profile.age")}: 28
               </p>
 
               {/* Compact Stats - Horizontal */}
               <div className="flex space-x-4 mt-2">
                 <div className="flex items-baseline space-x-1">
-                  <span className="text-healthcare-primary font-bold text-sm">
+                  <span className="text-healthcare-primary font-bold text-sm dark:text-white/70">
                     178
                   </span>
-                  <span className="text-[9px] text-healthcare-muted dark:text-slate-500 uppercase">
+                  <span className="text-[9px] text-healthcare-muted dark:text-white/70 uppercase">
                     cm
                   </span>
                 </div>
                 <div className="flex items-baseline space-x-1">
-                  <span className="text-healthcare-primary font-bold text-sm">
+                  <span className="text-healthcare-primary font-bold text-sm dark:text-white/70">
                     72
                   </span>
-                  <span className="text-[9px] text-healthcare-muted dark:text-slate-500 uppercase">
+                  <span className="text-[9px] text-healthcare-muted dark:text-white/70 uppercase">
                     kg
                   </span>
                 </div>
                 <div className="flex items-baseline space-x-1">
-                  <span className="text-healthcare-primary font-bold text-sm">
+                  <span className="text-healthcare-primary font-bold text-sm dark:text-white/70">
                     110/80
                   </span>
-                  <span className="text-[9px] text-healthcare-muted dark:text-slate-500 uppercase">
+                  <span className="text-[9px] text-healthcare-muted dark:text-white/70 uppercase">
                     BP
                   </span>
                 </div>
@@ -136,7 +136,7 @@ const Profile = () => {
 
         {/* Version Display - More Compact */}
         <div className="px-4 mt-4 pb-2 text-center">
-          <p className="text-[10px] text-healthcare-muted dark:text-slate-500">
+          <p className="text-[10px] text-healthcare-muted dark:text-white/70">
             {t("profile.version")} {import.meta.env.VITE_APP_VERSION || "1.0.0"}
           </p>
         </div>
