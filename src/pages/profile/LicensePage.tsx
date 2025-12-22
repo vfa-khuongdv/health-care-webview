@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import PageHeader from "../../components/ui/PageHeader";
 import { FileText } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface License {
   name: string;
@@ -68,14 +69,15 @@ const licenses: License[] = [
 
 const LicensePage = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <div className="min-h-screen bg-healthcare-surface dark:bg-healthcare-dark">
-      <PageHeader title="Open Source Licenses" onBack={() => navigate(-1)} />
+      <PageHeader title={t("license.title")} onBack={() => navigate(-1)} />
 
       <div className="px-4 py-3">
         <p className="text-xs text-healthcare-text-secondary dark:text-gray-400 mb-3">
-          This application uses the following open source libraries:
+          {t("license.description")}
         </p>
 
         <div className="space-y-2">
@@ -103,7 +105,7 @@ const LicensePage = () => {
                     rel="noopener noreferrer"
                     className="text-xs text-healthcare-primary dark:text-healthcare-secondary hover:underline inline-block mt-1"
                   >
-                    Repository →
+                    {t("license.repository")} →
                   </a>
                 </div>
               </div>
@@ -113,7 +115,7 @@ const LicensePage = () => {
 
         <div className="mt-4 p-2 bg-healthcare-primary/5 dark:bg-healthcare-secondary/5 rounded-lg">
           <p className="text-xs text-healthcare-text-secondary dark:text-gray-400 text-center">
-            All trademarks and copyrights belong to their respective owners.
+            {t("license.footer")}
           </p>
         </div>
       </div>

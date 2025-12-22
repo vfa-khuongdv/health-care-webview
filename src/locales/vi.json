@@ -149,5 +149,11 @@
     "not_found_title": "Không tìm thấy thứ bạn cần?",
     "not_found_desc": "Tạo phiếu hỗ trợ và nhóm của chúng tôi sẽ phản hồi bạn trong vòng 24 giờ.",
     "create_ticket": "Tạo phiếu"
+  },
+  "license": {
+    "title": "Giấy phép mã nguồn mở",
+    "description": "Ứng dụng này sử dụng các thư viện mã nguồn mở sau:",
+    "repository": "Kho lưu trữ",
+    "footer": "Tất cả các nhãn hiệu và bản quyền thuộc về chủ sở hữu tương ứng."
   }
 }

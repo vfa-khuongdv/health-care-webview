@@ -5,7 +5,6 @@ import Input from "../../components/ui/Input";
 import Select from "../../components/ui/Select";
 import PageHeader from "../../components/ui/PageHeader";
 import Card from "../../components/ui/Card";
-import { Calendar } from "lucide-react";
 
 const PersonalInfoPage: React.FC = () => {
   const navigate = useNavigate();
