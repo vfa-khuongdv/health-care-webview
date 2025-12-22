@@ -89,7 +89,7 @@ const LicensePage = () => {
                   <FileText size={16} />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-semibold text-sm text-healthcare-dark dark:text-white">
+                  <h3 className="font-semibold text-sm text-healthcare-dark dark:text-white/70">
                     {lib.name}
                   </h3>
                   <div className="text-xs text-healthcare-text-secondary dark:text-gray-400 mt-0.5">

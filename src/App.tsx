@@ -54,14 +54,12 @@ const Home = () => {
     <div className="animate-fade-in">
       {/* Hero Section */}
       <section className="px-6 mt-4">
-        <div className="glass-floating p-6 rounded-3xl text-healthcare-dark dark:text-white relative overflow-hidden">
+        <div className="glass-floating p-6 rounded-3xl text-healthcare-dark dark:text-white/70 relative overflow-hidden">
           <div className="relative z-10 w-2/3">
-            <h2 className="text-xl font-bold mb-2 leading-tight">
+            <h2 className="text-xl font-bold mb-2 leading-tight dark:text-white/70">
               {t("home.hero_title")}
             </h2>
-            <p className="dark:text-white/70 text-xs mb-4">
-              {t("home.hero_description")}
-            </p>
+            <p className="text-xs mb-4">{t("home.hero_description")}</p>
             <button className="bg-healthcare-primary dark:bg-healthcare-secondary/20 text-white dark:text-healthcare-secondary px-4 py-2 rounded-xl text-xs font-bold active:scale-95 transition-transform shadow-premium">
               {t("common.book_now")}
             </button>
@@ -79,7 +77,7 @@ const Home = () => {
       {/* Doctors Section */}
       <section className="mt-8 px-6 pb-4">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-lg font-bold text-healthcare-dark dark:text-white">
+          <h2 className="text-lg font-bold text-healthcare-dark dark:text-white/70">
             {t("home.nearby_doctors")}
           </h2>
           <button className="text-healthcare-primary text-xs font-bold uppercase tracking-wider">

@@ -5,6 +5,7 @@ import Input from "../../components/ui/Input";
 import Select from "../../components/ui/Select";
 import PageHeader from "../../components/ui/PageHeader";
 import Card from "../../components/ui/Card";
+import { Calendar } from "lucide-react";
 
 const PersonalInfoPage: React.FC = () => {
   const navigate = useNavigate();
@@ -53,7 +54,7 @@ const PersonalInfoPage: React.FC = () => {
           </div>
         </Card>
 
-        <button className="w-full py-4 bg-healthcare-primary text-white rounded-2xl font-bold shadow-lg shadow-healthcare-primary/30 active:scale-[0.98] transition-all">
+        <button className="w-full py-4 bg-healthcare-primary text-white dark:bg-healthcare-primary/5 dark:text-white/70 dark:shadow-none rounded-2xl font-bold shadow-lg shadow-healthcare-primary/30 active:scale-[0.98] transition-all">
           {t("profile.save_changes")}
         </button>
       </div>

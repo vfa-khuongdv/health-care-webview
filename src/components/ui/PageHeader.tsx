@@ -13,7 +13,7 @@ const PageHeader = ({ title, icon, onBack }: PageHeaderProps) => {
         {onBack ? (
           <button
             onClick={onBack}
-            className="p-2 rounded-xl bg-healthcare-surface dark:bg-slate-800 text-healthcare-dark dark:text-white active:scale-90 transition-transform"
+            className="p-2 rounded-xl bg-healthcare-surface dark:bg-slate-800 text-healthcare-dark dark:text-white/70 active:scale-90 transition-transform"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
@@ -24,7 +24,7 @@ const PageHeader = ({ title, icon, onBack }: PageHeaderProps) => {
             </div>
           )
         )}
-        <h1 className="text-2xl font-bold text-healthcare-dark dark:text-white">
+        <h1 className="text-2xl font-bold text-healthcare-dark dark:text-white/70">
           {title}
         </h1>
       </div>

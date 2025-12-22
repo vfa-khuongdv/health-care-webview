@@ -41,7 +41,7 @@ const OptionItem: React.FC<OptionItemProps> = ({
           </div>
         )}
         <div>
-          <h4 className="text-sm font-bold text-healthcare-dark dark:text-white">
+          <h4 className="text-sm font-bold text-healthcare-dark dark:text-white/70">
             {label}
           </h4>
           {sublabel && (

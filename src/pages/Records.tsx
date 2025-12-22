@@ -70,7 +70,7 @@ const Records = () => {
                   {record.icon}
                 </div>
                 <div>
-                  <h3 className="text-sm font-bold text-healthcare-dark dark:text-white group-hover:text-healthcare-primary transition-colors mb-1">
+                  <h3 className="text-sm font-bold text-healthcare-dark dark:text-white/70 group-hover:text-healthcare-primary transition-colors mb-1">
                     {record.title}
                   </h3>
                   <div className="flex items-center space-x-2">
@@ -107,7 +107,7 @@ const Records = () => {
               <Plus className="w-6 h-6" />
             </div>
             <div>
-              <h4 className="text-base font-bold text-healthcare-dark dark:text-white mb-1">
+              <h4 className="text-base font-bold text-healthcare-dark dark:text-white/70 mb-1">
                 {t("records.add_new")}
               </h4>
               <p className="text-xs text-healthcare-muted dark:text-slate-400 max-w-[220px]">

@@ -15,7 +15,7 @@ const Categories = () => {
   return (
     <section className="mt-8">
       <div className="px-6 flex justify-between items-center mb-4">
-        <h2 className="text-lg font-bold text-healthcare-dark dark:text-white">
+        <h2 className="text-lg font-bold text-healthcare-dark dark:text-white/70">
           {t("categories.title")}
         </h2>
         <button className="text-healthcare-primary text-xs font-bold uppercase tracking-wider">

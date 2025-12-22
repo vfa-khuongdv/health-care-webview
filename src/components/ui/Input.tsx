@@ -39,7 +39,7 @@ const Input: React.FC<InputProps> = ({
           </div>
         )}
         <input
-          className={`w-full bg-transparent outline-none p-4 text-sm font-medium text-healthcare-dark dark:text-white placeholder:text-healthcare-muted/50 dark:placeholder:text-slate-500 ${
+          className={`w-full bg-transparent outline-none p-4 text-sm font-medium text-healthcare-dark dark:text-white/70 placeholder:text-healthcare-muted/50 dark:placeholder:text-slate-500 ${
             leftIcon ? "pl-3" : ""
           } ${rightIcon ? "pr-3" : ""} ${className}`}
           {...props}

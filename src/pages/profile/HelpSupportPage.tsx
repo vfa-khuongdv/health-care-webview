@@ -44,7 +44,7 @@ const HelpSupportPage: React.FC = () => {
                 <span className="text-2xl group-hover:scale-110 transition-transform">
                   {item.icon}
                 </span>
-                <span className="text-[10px] font-bold text-healthcare-dark dark:text-white">
+                <span className="text-[10px] font-bold text-healthcare-dark dark:text-white/70">
                   {item.label}
                 </span>
               </button>
@@ -61,7 +61,7 @@ const HelpSupportPage: React.FC = () => {
                 key={i}
                 className="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-gray-50 dark:border-slate-800 shadow-sm space-y-2"
               >
-                <h4 className="text-sm font-bold text-healthcare-dark dark:text-white flex justify-between items-center">
+                <h4 className="text-sm font-bold text-healthcare-dark dark:text-white/70 flex justify-between items-center">
                   {faq.q}
                   <ChevronDown className="w-4 h-4 text-gray-300 dark:text-slate-700" />
                 </h4>
@@ -74,7 +74,7 @@ const HelpSupportPage: React.FC = () => {
         </div>
 
         {/* Support Ticket */}
-        <div className="bg-linear-to-br from-healthcare-primary to-healthcare-secondary p-6 rounded-3xl text-white shadow-lg relative overflow-hidden">
+        <div className="bg-linear-to-br from-healthcare-primary to-healthcare-secondary dark:from-healthcare-primary/50 dark:to-healthcare-secondary/50 p-6 rounded-3xl text-white dark:text-white/70 shadow-lg relative overflow-hidden">
           <div className="relative z-10">
             <h4 className="font-bold text-lg mb-1">
               {t("help.not_found_title")}
@@ -82,7 +82,7 @@ const HelpSupportPage: React.FC = () => {
             <p className="text-white/80 text-[11px] mb-4">
               {t("help.not_found_desc")}
             </p>
-            <button className="bg-white text-healthcare-primary px-5 py-2.5 rounded-xl text-xs font-bold active:scale-95 transition-transform shadow-premium">
+            <button className="bg-white text-healthcare-primary dark:bg-healthcare-primary/50 dark:text-white/70 px-5 py-2.5 rounded-xl text-xs font-bold active:scale-95 transition-transform shadow-premium">
               {t("help.create_ticket")}
             </button>
           </div>

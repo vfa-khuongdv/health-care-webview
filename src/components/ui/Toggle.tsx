@@ -11,7 +11,9 @@ const Toggle: React.FC<ToggleProps> = ({ value, onToggle, className = "" }) => {
     <button
       onClick={onToggle}
       className={`w-12 h-6 rounded-full transition-colors relative shrink-0 ${
-        value ? "bg-healthcare-primary" : "bg-gray-200 dark:bg-slate-800"
+        value
+          ? "bg-healthcare-primary dark:bg-healthcare-primary/50"
+          : "bg-gray-200 dark:bg-slate-800"
       } ${className}`}
     >
       <div

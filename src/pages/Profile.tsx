@@ -63,7 +63,7 @@ const Profile = () => {
 
             {/* Profile Info - Side by side for compactness */}
             <div className="flex-1 min-w-0">
-              <h2 className="text-lg font-bold text-healthcare-dark dark:text-white truncate">
+              <h2 className="text-lg font-bold text-healthcare-dark dark:text-white/70 truncate">
                 Johnathan Doe
               </h2>
               <p className="text-[11px] text-healthcare-muted dark:text-slate-400 mt-0.5">
@@ -114,7 +114,7 @@ const Profile = () => {
                   {item.icon}
                 </div>
                 <div className="text-left">
-                  <h3 className="text-sm font-semibold text-healthcare-dark dark:text-white">
+                  <h3 className="text-sm font-semibold text-healthcare-dark dark:text-white/70">
                     {item.label}
                   </h3>
                   <p className="text-[10px] text-healthcare-muted dark:text-slate-500 leading-tight">

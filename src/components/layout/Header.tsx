@@ -14,7 +14,7 @@ const Header = () => {
           <p className="text-healthcare-muted dark:text-slate-400 text-sm font-medium">
             {t("common.good_morning")}
           </p>
-          <h1 className="text-2xl font-bold text-healthcare-dark dark:text-white">
+          <h1 className="text-2xl font-bold text-healthcare-dark dark:text-white/70">
             Khuong DV
           </h1>
         </div>
@@ -22,7 +22,7 @@ const Header = () => {
           <ThemeToggle />
           <LanguageSwitcher />
           <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white dark:border-slate-800 shadow-premium">
-            <div className="w-full h-full bg-healthcare-primary flex items-center justify-center text-white font-bold text-lg">
+            <div className="w-full h-full bg-healthcare-primary flex items-center justify-center dark:text-white/70 font-bold text-lg">
               KD
             </div>
           </div>
@@ -40,7 +40,7 @@ const Header = () => {
         placeholder={t("common.search_placeholder")}
         leftIcon={<Search className="h-5 w-5" />}
         wrapperClassName="bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700 shadow-premium focus-within:ring-2 focus-within:ring-healthcare-primary/20 transition-all"
-        className="h-12 pl-0 dark:text-white dark:placeholder:text-slate-500"
+        className="h-12 pl-0 dark:text-white/70 dark:placeholder:text-slate-500"
       />
     </header>
   );

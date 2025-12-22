@@ -20,7 +20,7 @@ const DoctorCard = ({ name, specialty, rating, reviews }: DoctorProps) => {
       </div>
       <div className="flex flex-col justify-between py-1 grow">
         <div>
-          <h3 className="font-bold text-healthcare-dark dark:text-white truncate">
+          <h3 className="font-bold text-healthcare-dark dark:text-white/70 truncate">
             {name}
           </h3>
           <p className="text-xs font-semibold text-healthcare-muted dark:text-slate-400 uppercase tracking-wider">
@@ -31,10 +31,10 @@ const DoctorCard = ({ name, specialty, rating, reviews }: DoctorProps) => {
         <div className="flex items-center justify-between mt-2">
           <div className="flex items-center space-x-1">
             <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
-            <span className="text-xs font-bold text-healthcare-dark dark:text-slate-200">
+            <span className="text-xs font-bold text-healthcare-dark dark:text-white/70">
               {rating}
             </span>
-            <span className="text-[10px] text-healthcare-muted dark:text-slate-400">
+            <span className="text-[10px] text-healthcare-muted dark:text-white/70">
               ({reviews} {t("doctor.reviews")})
             </span>
           </div>

@@ -82,7 +82,7 @@ const Events = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-healthcare-dark dark:text-white mb-0.5 leading-none">
+                  <h3 className="text-lg font-bold text-healthcare-dark dark:text-white/70 mb-0.5 leading-none">
                     {event.doctor}
                   </h3>
                   <p className="text-xs font-medium text-healthcare-muted dark:text-slate-400">
@@ -116,7 +116,7 @@ const Events = () => {
 
               {event.status === t("events.status_upcoming") && (
                 <div className="mt-6 flex space-x-3">
-                  <button className="flex-1 py-2.5 rounded-xl text-xs font-bold bg-healthcare-primary text-white shadow-premium active:scale-95 transition-all">
+                  <button className="flex-1 py-2.5 rounded-xl text-xs font-bold bg-healthcare-primary dark:bg-healthcare-primary/5 text-white dark:text-white/70 shadow-premium active:scale-95 transition-all">
                     {t("common.reschedule")}
                   </button>
                   <button className="px-4 py-2.5 rounded-xl text-xs font-bold border border-gray-100 dark:border-slate-700 text-healthcare-muted dark:text-slate-400 hover:bg-gray-50 dark:hover:bg-slate-800 transition-all">
@@ -128,7 +128,7 @@ const Events = () => {
           </div>
         ))}
 
-        <button className="w-full mt-2 bg-linear-to-r from-healthcare-primary to-healthcare-secondary text-white py-4 rounded-3xl font-bold shadow-premium active:scale-95 transition-all hover:shadow-2xl">
+        <button className="w-full mt-2 bg-linear-to-r from-healthcare-primary to-healthcare-secondary dark:from-healthcare-primary/5 dark:to-healthcare-secondary/5 text-white dark:text-white/70 py-4 rounded-3xl font-bold shadow-premium active:scale-95 transition-all hover:shadow-2xl">
           {t("events.book_new")}
         </button>
       </div>

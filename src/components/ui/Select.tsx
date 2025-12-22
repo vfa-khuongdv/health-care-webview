@@ -41,7 +41,7 @@ const Select: React.FC<SelectProps> = ({
           </div>
         )}
         <select
-          className={`w-full bg-transparent outline-none p-4 text-sm font-medium text-healthcare-dark dark:text-white appearance-none cursor-pointer ${
+          className={`w-full bg-transparent outline-none p-4 text-sm font-medium text-healthcare-dark dark:text-white/70 appearance-none cursor-pointer ${
             leftIcon ? "pl-0" : ""
           } ${rightIcon !== null ? "pr-10" : ""} ${className}`}
           {...props}
