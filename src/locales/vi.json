@@ -4,7 +4,9 @@
     "book_now": "Đặt ngay",
     "search_placeholder": "Tìm bác sĩ, thuốc...",
     "good_morning": "Chào buổi sáng,",
-    "location": "Hồ Chí Minh, Việt Nam"
+    "location": "Hồ Chí Minh, Việt Nam",
+    "reschedule": "Đặt lịch lại",
+    "cancel": "Hủy bỏ"
   },
   "nav": {
     "home": "Trang chủ",
@@ -113,7 +115,10 @@
     "title": "Sự kiện của tôi",
     "status_upcoming": "Sắp tới",
     "status_completed": "Đã hoàn thành",
-    "book_new": "Đặt lịch hẹn mới"
+    "book_new": "Đặt lịch hẹn mới",
+    "location_hospital": "Bệnh viện Trung ương, Phòng 402",
+    "location_clinic": "Phòng khám Nha khoa Miller",
+    "location_vision": "Trung tâm Chăm sóc Mắt"
   },
   "records": {
     "title": "Hồ sơ của tôi",

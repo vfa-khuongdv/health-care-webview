@@ -4,7 +4,9 @@
     "book_now": "Book Now",
     "search_placeholder": "Search doctor, medicine...",
     "good_morning": "Good Morning,",
-    "location": "Hồ Chí Minh, Vietnam"
+    "location": "Hồ Chí Minh, Vietnam",
+    "reschedule": "Reschedule",
+    "cancel": "Cancel"
   },
   "nav": {
     "home": "Home",
@@ -114,7 +116,10 @@
     "title": "My Events",
     "status_upcoming": "Upcoming",
     "status_completed": "Completed",
-    "book_new": "Book New Appointment"
+    "book_new": "Book New Appointment",
+    "location_hospital": "Central Hospital, Room 402",
+    "location_clinic": "Miller Dental Clinic",
+    "location_vision": "Vision Care Center"
   },
   "records": {
     "title": "My Records",

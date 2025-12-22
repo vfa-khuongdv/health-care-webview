@@ -100,7 +100,10 @@ const Home = () => {
 
 const AppContent = () => {
   const location = useLocation();
-  const showHeader = !location.pathname.startsWith("/profile");
+  const showHeader =
+    !location.pathname.startsWith("/profile") &&
+    !location.pathname.startsWith("/events") &&
+    !location.pathname.startsWith("/records");
 
   return (
     <div className="min-h-screen bg-transparent pb-24 md:max-w-md md:mx-auto md:shadow-2xl md:relative md:overflow-hidden transition-all duration-300">
