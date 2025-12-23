@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Search, ChevronDown } from "lucide-react";
 import Input from "../../components/ui/Input";
@@ -7,7 +6,6 @@ import PageHeader from "../../components/ui/PageHeader";
 import SectionHeader from "../../components/ui/SectionHeader";
 
 const HelpSupportPage: React.FC = () => {
-  const navigate = useNavigate();
   const { t } = useTranslation();
 
   const faqs = [
@@ -18,7 +16,7 @@ const HelpSupportPage: React.FC = () => {
 
   return (
     <div className="animate-slide-up">
-      <PageHeader title={t("help.title")} onBack={() => navigate("/profile")} />
+      <PageHeader title={t("help.title")} showBack={true} />
 
       <div className="px-6 mt-4 space-y-8 pb-20">
         {/* Search Bar */}

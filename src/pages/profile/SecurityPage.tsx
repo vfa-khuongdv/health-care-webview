@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Key, Fingerprint, Smartphone, ExternalLink } from "lucide-react";
 import PageHeader from "../../components/ui/PageHeader";
@@ -8,17 +7,13 @@ import OptionItem from "../../components/ui/OptionItem";
 import Toggle from "../../components/ui/Toggle";
 
 const SecurityPage: React.FC = () => {
-  const navigate = useNavigate();
   const { t } = useTranslation();
   const [biometrics, setBiometrics] = useState(true);
   const [twoFactor, setTwoFactor] = useState(false);
 
   return (
     <div className="animate-slide-up">
-      <PageHeader
-        title={t("security.title")}
-        onBack={() => navigate("/profile")}
-      />
+      <PageHeader title={t("security.title")} showBack={true} />
 
       <div className="px-6 mt-4 space-y-6 pb-20">
         {/* Password Section */}

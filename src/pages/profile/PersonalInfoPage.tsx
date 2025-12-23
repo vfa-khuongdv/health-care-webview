@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Input from "../../components/ui/Input";
 import Select from "../../components/ui/Select";
@@ -7,15 +6,11 @@ import PageHeader from "../../components/ui/PageHeader";
 import Card from "../../components/ui/Card";
 
 const PersonalInfoPage: React.FC = () => {
-  const navigate = useNavigate();
   const { t } = useTranslation();
 
   return (
     <div className="animate-slide-up pb-10">
-      <PageHeader
-        title={t("profile.personal_info")}
-        onBack={() => navigate("/profile")}
-      />
+      <PageHeader title={t("profile.personal_info")} showBack={true} />
 
       <div className="px-6 mt-4 space-y-6">
         <Card padding={true}>

@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import PageHeader from "../../components/ui/PageHeader";
 import { FileText } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -68,12 +67,11 @@ const licenses: License[] = [
 ];
 
 const LicensePage = () => {
-  const navigate = useNavigate();
   const { t } = useTranslation();
 
   return (
     <div className="min-h-screen bg-healthcare-surface dark:bg-healthcare-dark">
-      <PageHeader title={t("license.title")} onBack={() => navigate(-1)} />
+      <PageHeader title={t("license.title")} showBack={true} />
 
       <div className="px-4 py-3">
         <p className="text-xs text-healthcare-text-secondary dark:text-gray-400 mb-3">

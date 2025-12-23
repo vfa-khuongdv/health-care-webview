@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import PageHeader from "../../components/ui/PageHeader";
 import SectionHeader from "../../components/ui/SectionHeader";
@@ -7,7 +6,6 @@ import OptionItem from "../../components/ui/OptionItem";
 import Toggle from "../../components/ui/Toggle";
 
 const NotificationsPage: React.FC = () => {
-  const navigate = useNavigate();
   const { t } = useTranslation();
   const [settings, setSettings] = useState({
     appointments: true,
@@ -24,10 +22,7 @@ const NotificationsPage: React.FC = () => {
 
   return (
     <div className="animate-slide-up">
-      <PageHeader
-        title={t("notifications.title")}
-        onBack={() => navigate("/profile")}
-      />
+      <PageHeader title={t("notifications.title")} showBack={true} />
 
       <div className="px-6 mt-4 space-y-6 pb-20">
         <div className="space-y-4">
